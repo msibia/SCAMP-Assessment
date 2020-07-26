@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&display=swap" rel="stylesheet">
+    <title>Welcome</title>
+</head>
+
+<body style="background-image: url('image.jpg'); overflow: hidden;">
+
+
+    <div id="background_container">
+        <div class="topnav">
+            <a class="active">Home</a>
+            <a href="#Portfolio">View Portfolio</a>
+            <a href="#about">About Us</a>
+        </div> <br>
+        <div id="logo_div">
+            <img src="Logo2.png" alt="Logo" width="150" height="150">
+        </div>
+        <div id="center_container">
+            <div id="abc">
+                <!-- Popup Div Starts Here -->
+                <div id="popupContact">
+                    <!-- Contact Us Form -->
+                    <form action="#" id="form" method="post" name="form">
+                        <img id="close" src="close_button.jpg" onclick="div_hide()" width="20px">
+                        <h2 style="background-color: #ca9c38;">Contact Us</h2>
+                        <hr>
+                        <input id="name" name="name" placeholder="Name" type="text">
+                        <input id="email" name="email" placeholder="Email" type="text">
+                        <textarea id="msg" name="message" placeholder="Message"></textarea>
+                        <a href="javascript:%20check_empty()" id="submit">Send</a>
+                    </form>
+                </div>
+                <!-- Popup Div Ends Here -->
+            </div>
+            <div id="contact">
+                <marquee>
+                    <h1>
+                        <time id="time"></time>
+                    </h1>
+                </marquee>
+                <h2>
+                    Do you think you can make your landing page look this good? </h2>
+                <h3> Browse through our website, explore our portfolio and see how easily we can get your landing page to look just like ours.
+                </h3><br>
+                <button id="popup_button" onclick="div_show()">CONTACT US</button>
+
+            </div>
+
+        </div>
+        <script src="script.js"></script>
+</body>
+
+</html>
